@@ -1,20 +1,21 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.C_Streams = exports.C_Sync = exports.C_Message = exports.C_System = exports.C_Keys = exports.C_Event = exports.C_DHT = exports.C_Constants = exports.C_Connection = void 0;
 const connection_1 = require("./constants/connection");
-const messages_1 = require("./constants/messages");
+Object.defineProperty(exports, "C_Connection", { enumerable: true, get: function () { return connection_1.Connection; } });
+const constants_1 = require("./constants/constants");
+Object.defineProperty(exports, "C_Constants", { enumerable: true, get: function () { return constants_1.Constants; } });
 const dht_1 = require("./constants/dht");
+Object.defineProperty(exports, "C_DHT", { enumerable: true, get: function () { return dht_1.DHT; } });
 const event_1 = require("./constants/event");
+Object.defineProperty(exports, "C_Event", { enumerable: true, get: function () { return event_1.Event; } });
 const keys_1 = require("./constants/keys");
+Object.defineProperty(exports, "C_Keys", { enumerable: true, get: function () { return keys_1.Keys; } });
 const system_1 = require("./constants/system");
+Object.defineProperty(exports, "C_System", { enumerable: true, get: function () { return system_1.System; } });
 const message_1 = require("./constants/message");
+Object.defineProperty(exports, "C_Message", { enumerable: true, get: function () { return message_1.Message; } });
 const sync_1 = require("./constants/sync");
-exports.default = {
-    Connection: connection_1.Connection,
-    Messages: messages_1.Messages,
-    DHT: dht_1.DHT,
-    Event: event_1.Event,
-    Keys: keys_1.Keys,
-    System: system_1.System,
-    Message: message_1.Message,
-    Sync: sync_1.Sync,
-};
+Object.defineProperty(exports, "C_Sync", { enumerable: true, get: function () { return sync_1.Sync; } });
+const streams_1 = require("./constants/streams");
+Object.defineProperty(exports, "C_Streams", { enumerable: true, get: function () { return streams_1.Streams; } });
