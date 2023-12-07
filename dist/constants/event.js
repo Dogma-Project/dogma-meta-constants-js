@@ -1,0 +1,45 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.Event = void 0;
+var Event;
+(function (Event) {
+    let Action;
+    (function (Action) {
+        Action[Action["update"] = 0] = "update";
+        Action[Action["set"] = 1] = "set";
+    })(Action = Event.Action || (Event.Action = {}));
+    let Type;
+    (function (Type) {
+        Type["start"] = "START";
+        Type["online"] = "ONLINE";
+        Type["offline"] = "OFFLINE";
+        Type["nodes"] = "NODES";
+        Type["users"] = "USERS";
+        Type["prefix"] = "PREFIX";
+        Type["services"] = "SERVICES";
+        Type["masterKey"] = "MASTER KEY";
+        Type["nodeKey"] = "NODE KEY";
+        Type["configDb"] = "CONFIG DB";
+        Type["nodesDb"] = "NODES DB";
+        Type["usersDb"] = "USERS DB";
+        Type["messagesDb"] = "MESSAGES DB";
+        Type["dhtService"] = "DHT SERVICE";
+        Type["dhtDb"] = "DHT DB";
+        Type["filesDb"] = "FILES DB";
+        Type["protocolDb"] = "PROTOCOL DB";
+        Type["syncDb"] = "SYNC DB";
+        Type["server"] = "SERVER";
+        Type["localDiscovery"] = "LOCAL DISCOVERY";
+        Type["dirStatus"] = "HOME DIR";
+        Type["storageUser"] = "STORAGE USER";
+        Type["storageNode"] = "STORAGE NODE";
+        Type["configRouter"] = "CONFIG ROUTER";
+        Type["configDhtLookup"] = "CONFIG DHT LOOKUP";
+        Type["configDhtAnnounce"] = "CONFIG DHT ANNOUNCE";
+        Type["configDhtBootstrap"] = "CONFIG DHT BOOTSTRAP";
+        Type["configAutoDefine"] = "CONFIG AUTO DEFINE";
+        Type["configExternal"] = "CONFIG EXTERNAL";
+        Type["configPublicIpV4"] = "CONFIG PUBLIC IPV4";
+        Type["configLocalDiscovery"] = "CONFIG LOCAL DISCOVERY";
+    })(Type = Event.Type || (Event.Type = {}));
+})(Event || (exports.Event = Event = {}));
