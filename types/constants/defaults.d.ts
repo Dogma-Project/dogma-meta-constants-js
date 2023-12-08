@@ -5,7 +5,7 @@ export declare const Defaults: {
     external: string;
     autoDefineIp: boolean;
     localDiscovery: boolean;
-    localDiscoveryPort: boolean;
+    localDiscoveryPort: number;
     userName: string;
     nodeName: string;
 };
