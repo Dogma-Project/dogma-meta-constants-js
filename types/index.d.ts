@@ -7,4 +7,5 @@ import { System as C_System } from "./constants/system";
 import { Message as C_Message } from "./constants/message";
 import { Sync as C_Sync } from "./constants/sync";
 import { Streams as C_Streams } from "./constants/streams";
-export { C_Connection, C_Constants, C_DHT, C_Event, C_Keys, C_System, C_Message, C_Sync, C_Streams, };
+import { Defaults as C_Defaults } from "./constants/defaults";
+export { C_Connection, C_Constants, C_DHT, C_Event, C_Keys, C_System, C_Message, C_Sync, C_Streams, C_Defaults, };

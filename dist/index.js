@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.C_Streams = exports.C_Sync = exports.C_Message = exports.C_System = exports.C_Keys = exports.C_Event = exports.C_DHT = exports.C_Constants = exports.C_Connection = void 0;
+exports.C_Defaults = exports.C_Streams = exports.C_Sync = exports.C_Message = exports.C_System = exports.C_Keys = exports.C_Event = exports.C_DHT = exports.C_Constants = exports.C_Connection = void 0;
 const connection_1 = require("./constants/connection");
 Object.defineProperty(exports, "C_Connection", { enumerable: true, get: function () { return connection_1.Connection; } });
 const constants_1 = require("./constants/constants");
@@ -19,3 +19,5 @@ const sync_1 = require("./constants/sync");
 Object.defineProperty(exports, "C_Sync", { enumerable: true, get: function () { return sync_1.Sync; } });
 const streams_1 = require("./constants/streams");
 Object.defineProperty(exports, "C_Streams", { enumerable: true, get: function () { return streams_1.Streams; } });
+const defaults_1 = require("./constants/defaults");
+Object.defineProperty(exports, "C_Defaults", { enumerable: true, get: function () { return defaults_1.Defaults; } });

@@ -1,4 +1,3 @@
-import { System } from "./system";
 export declare namespace Constants {
     enum Messages {
         test = "hello"
@@ -10,13 +9,3 @@ export declare namespace Constants {
         confirmed = 2
     }
 }
-export declare const Defaults: {
-    router: number;
-    logLevel: System.LogLevel;
-    external: string;
-    autoDefineIp: boolean;
-    localDiscovery: boolean;
-    localDiscoveryPort: boolean;
-    userName: string;
-    nodeName: string;
-};
