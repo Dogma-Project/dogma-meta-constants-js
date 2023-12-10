@@ -16,6 +16,7 @@ var Event;
         Type["nodes"] = "NODES";
         Type["users"] = "USERS";
         Type["prefix"] = "PREFIX";
+        Type["encryptionKey"] = "ENCRYPTION KEY";
         Type["services"] = "SERVICES";
         Type["masterKey"] = "MASTER KEY";
         Type["nodeKey"] = "NODE KEY";
