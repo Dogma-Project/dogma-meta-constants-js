@@ -15,7 +15,6 @@ var Event;
         Type["offline"] = "OFFLINE";
         Type["nodes"] = "NODES";
         Type["users"] = "USERS";
-        Type["prefix"] = "PREFIX";
         Type["encryptionKey"] = "ENCRYPTION KEY";
         Type["services"] = "SERVICES";
         Type["masterKey"] = "MASTER KEY";

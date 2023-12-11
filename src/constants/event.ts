@@ -11,7 +11,6 @@ export namespace Event {
 
     nodes = "NODES", // storage
     users = "USERS", // storage
-    prefix = "PREFIX", // storage
     encryptionKey = "ENCRYPTION KEY", // storage
     services = "SERVICES",
 
@@ -69,11 +68,7 @@ export namespace Event {
       | Type.storageUser
       | Type.storageNode;
     export type Services = Type.services;
-    export type Storage =
-      | Type.nodes
-      | Type.users
-      | Type.prefix
-      | Type.encryptionKey;
+    export type Storage = Type.nodes | Type.users | Type.encryptionKey;
     export type Action = Type.start | Type.online | Type.offline;
   }
 }

@@ -23,6 +23,9 @@ var System;
         States[States["ok"] = 5] = "ok";
         States[States["full"] = 6] = "full";
     })(States = System.States || (System.States = {}));
+    /**
+     * @deprecated
+     */
     let Args;
     (function (Args) {
         Args["auto"] = "auto";
