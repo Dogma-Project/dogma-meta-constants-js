@@ -13,6 +13,7 @@ var Event;
         Type["start"] = "START";
         Type["online"] = "ONLINE";
         Type["offline"] = "OFFLINE";
+        Type["friendshipRequest"] = "FRIENDSHIP REQUEST";
         Type["nodes"] = "NODES";
         Type["users"] = "USERS";
         Type["encryptionKey"] = "ENCRYPTION KEY";

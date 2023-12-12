@@ -8,6 +8,7 @@ export namespace Event {
     start = "START", // action
     online = "ONLINE", // action
     offline = "OFFLINE", // action
+    friendshipRequest = "FRIENDSHIP REQUEST", // action
 
     nodes = "NODES", // storage
     users = "USERS", // storage
@@ -73,6 +74,10 @@ export namespace Event {
       | Type.storageNode;
     export type Services = Type.services;
     export type Storage = Type.nodes | Type.users | Type.encryptionKey;
-    export type Action = Type.start | Type.online | Type.offline;
+    export type Action =
+      | Type.start
+      | Type.online
+      | Type.offline
+      | Type.friendshipRequest;
   }
 }
