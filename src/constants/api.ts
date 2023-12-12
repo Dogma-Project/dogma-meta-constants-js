@@ -9,10 +9,25 @@ export namespace API {
   }
 
   export enum ApiRequestAction {
+    /**
+     * Get a value or a state
+     */
     get = 0,
+    /**
+     * Replace a value or a state
+     */
     set = 1,
+    /**
+     * Append a value or a state
+     */
     push = 2,
+    /**
+     * Delete a value or a state
+     */
     delete = 3,
+    /**
+     * Only in node responces
+     */
     result = 4,
   }
 }

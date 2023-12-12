@@ -3,7 +3,13 @@ export declare namespace Connection {
         error = -1,
         notConnected = 0,
         connected = 1,
+        /**
+         * Remote peer not in friends
+         */
         notAuthorized = 2,
+        /**
+         * Remote peer is in friends
+         */
         authorized = 3
     }
     enum Group {
@@ -19,7 +25,13 @@ export declare namespace Connection {
         incoming = 1
     }
     enum Stage {
+        /**
+         * Send StageInitRequest with out session code and own credentials
+         */
         init = 0,
+        /**
+         * Send signed out session code and public keys
+         */
         verification = 1
     }
 }

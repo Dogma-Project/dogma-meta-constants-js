@@ -14,10 +14,25 @@ var API;
     })(ApiRequestType = API.ApiRequestType || (API.ApiRequestType = {}));
     let ApiRequestAction;
     (function (ApiRequestAction) {
+        /**
+         * Get a value or a state
+         */
         ApiRequestAction[ApiRequestAction["get"] = 0] = "get";
+        /**
+         * Replace a value or a state
+         */
         ApiRequestAction[ApiRequestAction["set"] = 1] = "set";
+        /**
+         * Append a value or a state
+         */
         ApiRequestAction[ApiRequestAction["push"] = 2] = "push";
+        /**
+         * Delete a value or a state
+         */
         ApiRequestAction[ApiRequestAction["delete"] = 3] = "delete";
+        /**
+         * Only in node responces
+         */
         ApiRequestAction[ApiRequestAction["result"] = 4] = "result";
     })(ApiRequestAction = API.ApiRequestAction || (API.ApiRequestAction = {}));
 })(API || (exports.API = API = {}));

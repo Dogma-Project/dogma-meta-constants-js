@@ -8,7 +8,13 @@ var Connection;
         Status[Status["error"] = -1] = "error";
         Status[Status["notConnected"] = 0] = "notConnected";
         Status[Status["connected"] = 1] = "connected";
+        /**
+         * Remote peer not in friends
+         */
         Status[Status["notAuthorized"] = 2] = "notAuthorized";
+        /**
+         * Remote peer is in friends
+         */
         Status[Status["authorized"] = 3] = "authorized";
     })(Status = Connection.Status || (Connection.Status = {}));
     let Group;
@@ -27,7 +33,13 @@ var Connection;
     })(Direction = Connection.Direction || (Connection.Direction = {}));
     let Stage;
     (function (Stage) {
+        /**
+         * Send StageInitRequest with out session code and own credentials
+         */
         Stage[Stage["init"] = 0] = "init";
+        /**
+         * Send signed out session code and public keys
+         */
         Stage[Stage["verification"] = 1] = "verification";
     })(Stage = Connection.Stage || (Connection.Stage = {}));
 })(Connection || (exports.Connection = Connection = {}));
