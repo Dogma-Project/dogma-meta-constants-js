@@ -14,7 +14,7 @@ export namespace Event {
     encryptionKey = "ENCRYPTION KEY", // storage
     services = "SERVICES",
 
-    masterKey = "MASTER KEY", // service
+    userKey = "USER KEY", // service
     nodeKey = "NODE KEY", // service
     configDb = "CONFIG DB", // service
     nodesDb = "NODES DB", // service
@@ -38,12 +38,16 @@ export namespace Event {
     configAutoDefine = "CONFIG AUTO DEFINE", // config
     configExternal = "CONFIG EXTERNAL", // config
     configPublicIpV4 = "CONFIG PUBLIC IPV4", // config
-    configLocalDiscovery = "CONFIG LOCAL DISCOVERY",
+    configLocalDiscovery = "CONFIG LOCAL DISCOVERY", // config
+    configFriendshipRequests = "CONFIG FRIENDSHIP REQUESTS", // config
   }
 
   export namespace Type {
     export type ConfigStr = Type.configExternal | Type.configPublicIpV4;
-    export type ConfigBool = Type.configAutoDefine | Type.configLocalDiscovery;
+    export type ConfigBool =
+      | Type.configAutoDefine
+      | Type.configLocalDiscovery
+      | Type.configFriendshipRequests;
     export type ConfigNum =
       | Type.configRouter
       | Type.configDhtAnnounce
@@ -51,7 +55,7 @@ export namespace Event {
       | Type.configDhtLookup;
     export type Config = ConfigStr | ConfigBool | ConfigNum;
     export type Service =
-      | Type.masterKey
+      | Type.userKey
       | Type.nodeKey
       | Type.configDb
       | Type.nodesDb

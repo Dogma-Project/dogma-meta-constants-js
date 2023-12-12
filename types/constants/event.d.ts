@@ -11,7 +11,7 @@ export declare namespace Event {
         users = "USERS",// storage
         encryptionKey = "ENCRYPTION KEY",// storage
         services = "SERVICES",
-        masterKey = "MASTER KEY",// service
+        userKey = "USER KEY",// service
         nodeKey = "NODE KEY",// service
         configDb = "CONFIG DB",// service
         nodesDb = "NODES DB",// service
@@ -34,14 +34,15 @@ export declare namespace Event {
         configAutoDefine = "CONFIG AUTO DEFINE",// config
         configExternal = "CONFIG EXTERNAL",// config
         configPublicIpV4 = "CONFIG PUBLIC IPV4",// config
-        configLocalDiscovery = "CONFIG LOCAL DISCOVERY"
+        configLocalDiscovery = "CONFIG LOCAL DISCOVERY",// config
+        configFriendshipRequests = "CONFIG FRIENDSHIP REQUESTS"
     }
     namespace Type {
         type ConfigStr = Type.configExternal | Type.configPublicIpV4;
-        type ConfigBool = Type.configAutoDefine | Type.configLocalDiscovery;
+        type ConfigBool = Type.configAutoDefine | Type.configLocalDiscovery | Type.configFriendshipRequests;
         type ConfigNum = Type.configRouter | Type.configDhtAnnounce | Type.configDhtBootstrap | Type.configDhtLookup;
         type Config = ConfigStr | ConfigBool | ConfigNum;
-        type Service = Type.masterKey | Type.nodeKey | Type.configDb | Type.nodesDb | Type.usersDb | Type.messagesDb | Type.dhtService | Type.dhtDb | Type.filesDb | Type.protocolDb | Type.syncDb | Type.server | Type.localDiscovery | Type.dirStatus | Type.storageUser | Type.storageNode;
+        type Service = Type.userKey | Type.nodeKey | Type.configDb | Type.nodesDb | Type.usersDb | Type.messagesDb | Type.dhtService | Type.dhtDb | Type.filesDb | Type.protocolDb | Type.syncDb | Type.server | Type.localDiscovery | Type.dirStatus | Type.storageUser | Type.storageNode;
         type Services = Type.services;
         type Storage = Type.nodes | Type.users | Type.encryptionKey;
         type Action = Type.start | Type.online | Type.offline;
