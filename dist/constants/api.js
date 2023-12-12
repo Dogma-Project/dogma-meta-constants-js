@@ -11,6 +11,9 @@ var API;
         ApiRequestType[ApiRequestType["network"] = 3] = "network";
         ApiRequestType[ApiRequestType["user"] = 4] = "user";
         ApiRequestType[ApiRequestType["node"] = 5] = "node";
+        ApiRequestType[ApiRequestType["system"] = 6] = "system";
+        ApiRequestType[ApiRequestType["messages"] = 7] = "messages";
+        ApiRequestType[ApiRequestType["storage"] = 8] = "storage";
     })(ApiRequestType = API.ApiRequestType || (API.ApiRequestType = {}));
     let ApiRequestAction;
     (function (ApiRequestAction) {

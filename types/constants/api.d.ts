@@ -5,7 +5,10 @@ export declare namespace API {
         keys = 2,
         network = 3,
         user = 4,
-        node = 5
+        node = 5,
+        system = 6,
+        messages = 7,
+        storage = 8
     }
     enum ApiRequestAction {
         /**

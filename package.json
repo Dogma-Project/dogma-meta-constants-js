@@ -1,6 +1,6 @@
 {
   "name": "@dogma-project/constants-meta",
-  "version": "0.7.5",
+  "version": "0.7.6",
   "description": "External constants for Dogma Meta Package",
   "main": "./dist/index.js",
   "types": "./types/index.d.ts",

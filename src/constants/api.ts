@@ -6,6 +6,9 @@ export namespace API {
     network = 3,
     user = 4,
     node = 5,
+    system = 6,
+    messages = 7,
+    storage = 8,
   }
 
   export enum ApiRequestAction {
