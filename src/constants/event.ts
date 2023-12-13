@@ -6,9 +6,11 @@ export namespace Event {
 
   export enum Type {
     start = "START", // action
+
     online = "ONLINE", // action
     offline = "OFFLINE", // action
     friendshipRequest = "FRIENDSHIP REQUEST", // action
+    sync = "SYNC", // action
 
     nodes = "NODES", // storage
     users = "USERS", // storage

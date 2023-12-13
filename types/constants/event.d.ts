@@ -8,6 +8,7 @@ export declare namespace Event {
         online = "ONLINE",// action
         offline = "OFFLINE",// action
         friendshipRequest = "FRIENDSHIP REQUEST",// action
+        sync = "SYNC",// action
         nodes = "NODES",// storage
         users = "USERS",// storage
         encryptionKey = "ENCRYPTION KEY",// storage
