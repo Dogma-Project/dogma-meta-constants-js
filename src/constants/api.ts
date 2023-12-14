@@ -9,6 +9,8 @@ export namespace API {
     system = 6,
     messages = 7,
     storage = 8,
+    prefix = 9,
+    prefixes = 10,
   }
 
   export enum ApiRequestAction {

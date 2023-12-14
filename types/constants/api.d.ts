@@ -8,7 +8,9 @@ export declare namespace API {
         node = 5,
         system = 6,
         messages = 7,
-        storage = 8
+        storage = 8,
+        prefix = 9,
+        prefixes = 10
     }
     enum ApiRequestAction {
         /**

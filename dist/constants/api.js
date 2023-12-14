@@ -14,6 +14,8 @@ var API;
         ApiRequestType[ApiRequestType["system"] = 6] = "system";
         ApiRequestType[ApiRequestType["messages"] = 7] = "messages";
         ApiRequestType[ApiRequestType["storage"] = 8] = "storage";
+        ApiRequestType[ApiRequestType["prefix"] = 9] = "prefix";
+        ApiRequestType[ApiRequestType["prefixes"] = 10] = "prefixes";
     })(ApiRequestType = API.ApiRequestType || (API.ApiRequestType = {}));
     let ApiRequestAction;
     (function (ApiRequestAction) {
