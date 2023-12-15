@@ -45,6 +45,10 @@ var Streams;
          * AES symmetric-encrypted MX
          */
         MX[MX["relay"] = 9] = "relay";
+        /**
+         * AES symmetric-encrypted MX for sync
+         */
+        MX[MX["sync"] = 10] = "sync";
     })(MX = Streams.MX || (Streams.MX = {}));
     let SIZES;
     (function (SIZES) {

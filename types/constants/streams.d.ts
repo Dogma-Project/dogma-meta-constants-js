@@ -39,7 +39,11 @@ export declare namespace Streams {
         /**
          * AES symmetric-encrypted MX
          */
-        relay = 9
+        relay = 9,
+        /**
+         * AES symmetric-encrypted MX for sync
+         */
+        sync = 10
     }
     enum SIZES {
         /**

@@ -40,6 +40,10 @@ export namespace Streams {
      * AES symmetric-encrypted MX
      */
     relay = 9,
+    /**
+     * AES symmetric-encrypted MX for sync
+     */
+    sync = 10,
   }
 
   export enum SIZES {
