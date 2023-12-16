@@ -14,5 +14,6 @@ export namespace Sync {
   export enum Action {
     get = 0,
     push = 1,
+    notify = 2,
   }
 }

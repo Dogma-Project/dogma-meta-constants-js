@@ -13,6 +13,7 @@ export declare namespace Sync {
     }
     enum Action {
         get = 0,
-        push = 1
+        push = 1,
+        notify = 2
     }
 }

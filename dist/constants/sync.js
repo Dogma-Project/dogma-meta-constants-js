@@ -21,5 +21,6 @@ var Sync;
     (function (Action) {
         Action[Action["get"] = 0] = "get";
         Action[Action["push"] = 1] = "push";
+        Action[Action["notify"] = 2] = "notify";
     })(Action = Sync.Action || (Sync.Action = {}));
 })(Sync || (exports.Sync = Sync = {}));
