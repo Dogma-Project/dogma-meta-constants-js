@@ -12,8 +12,6 @@ export namespace Event {
     friendshipRequest = "FRIENDSHIP REQUEST", // action
     sync = "SYNC", // action
 
-    nodes = "NODES", // storage
-    users = "USERS", // storage
     encryptionKey = "ENCRYPTION KEY", // storage
     services = "SERVICES",
 
@@ -75,7 +73,7 @@ export namespace Event {
       | Type.storageUser
       | Type.storageNode;
     export type Services = Type.services;
-    export type Storage = Type.nodes | Type.users | Type.encryptionKey;
+    export type Storage = Type.encryptionKey;
     export type Action =
       | Type.start
       | Type.online

@@ -9,8 +9,6 @@ export declare namespace Event {
         offline = "OFFLINE",// action
         friendshipRequest = "FRIENDSHIP REQUEST",// action
         sync = "SYNC",// action
-        nodes = "NODES",// storage
-        users = "USERS",// storage
         encryptionKey = "ENCRYPTION KEY",// storage
         services = "SERVICES",
         userKey = "USER KEY",// service
@@ -46,7 +44,7 @@ export declare namespace Event {
         type Config = ConfigStr | ConfigBool | ConfigNum;
         type Service = Type.userKey | Type.nodeKey | Type.configDb | Type.nodesDb | Type.usersDb | Type.messagesDb | Type.dhtService | Type.dhtDb | Type.filesDb | Type.protocolDb | Type.syncDb | Type.server | Type.localDiscovery | Type.dirStatus | Type.storageUser | Type.storageNode;
         type Services = Type.services;
-        type Storage = Type.nodes | Type.users | Type.encryptionKey;
+        type Storage = Type.encryptionKey;
         type Action = Type.start | Type.online | Type.offline | Type.friendshipRequest;
     }
 }

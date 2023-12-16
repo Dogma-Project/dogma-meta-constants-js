@@ -15,8 +15,6 @@ var Event;
         Type["offline"] = "OFFLINE";
         Type["friendshipRequest"] = "FRIENDSHIP REQUEST";
         Type["sync"] = "SYNC";
-        Type["nodes"] = "NODES";
-        Type["users"] = "USERS";
         Type["encryptionKey"] = "ENCRYPTION KEY";
         Type["services"] = "SERVICES";
         Type["userKey"] = "USER KEY";
