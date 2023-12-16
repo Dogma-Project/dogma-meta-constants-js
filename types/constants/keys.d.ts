@@ -18,4 +18,5 @@ export declare namespace Keys {
         IV_LENGTH = 16,
         KEY_LENGTH_BYTES = 32
     }
+    const HASH = "sha256";
 }

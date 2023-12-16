@@ -26,4 +26,5 @@ var Keys;
         STATIC_AES[STATIC_AES["IV_LENGTH"] = 16] = "IV_LENGTH";
         STATIC_AES[STATIC_AES["KEY_LENGTH_BYTES"] = 32] = "KEY_LENGTH_BYTES";
     })(STATIC_AES = Keys.STATIC_AES || (Keys.STATIC_AES = {}));
+    Keys.HASH = "sha256";
 })(Keys || (exports.Keys = Keys = {}));
