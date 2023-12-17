@@ -32,6 +32,10 @@ export declare namespace API {
         /**
          * Only in node responces
          */
-        result = 4
+        result = 4,
+        /**
+         * Return error
+         */
+        error = 5
     }
 }

@@ -39,5 +39,9 @@ var API;
          * Only in node responces
          */
         ApiRequestAction[ApiRequestAction["result"] = 4] = "result";
+        /**
+         * Return error
+         */
+        ApiRequestAction[ApiRequestAction["error"] = 5] = "error";
     })(ApiRequestAction = API.ApiRequestAction || (API.ApiRequestAction = {}));
 })(API || (exports.API = API = {}));
