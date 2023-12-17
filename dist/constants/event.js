@@ -11,6 +11,7 @@ var Event;
     let Type;
     (function (Type) {
         Type["start"] = "START";
+        Type["ready"] = "READY";
         Type["online"] = "ONLINE";
         Type["offline"] = "OFFLINE";
         Type["friendshipRequest"] = "FRIENDSHIP REQUEST";

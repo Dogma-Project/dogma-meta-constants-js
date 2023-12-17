@@ -5,6 +5,7 @@ export declare namespace Event {
     }
     enum Type {
         start = "START",// action
+        ready = "READY",// action
         online = "ONLINE",// action
         offline = "OFFLINE",// action
         friendshipRequest = "FRIENDSHIP REQUEST",// action
@@ -45,6 +46,6 @@ export declare namespace Event {
         type Service = Type.userKey | Type.nodeKey | Type.configDb | Type.nodesDb | Type.usersDb | Type.messagesDb | Type.dhtService | Type.dhtDb | Type.filesDb | Type.protocolDb | Type.syncDb | Type.server | Type.localDiscovery | Type.dirStatus | Type.storageUser | Type.storageNode;
         type Services = Type.services;
         type Storage = Type.encryptionKey;
-        type Action = Type.start | Type.online | Type.offline | Type.friendshipRequest;
+        type Action = Type.start | Type.ready | Type.online | Type.offline | Type.friendshipRequest;
     }
 }

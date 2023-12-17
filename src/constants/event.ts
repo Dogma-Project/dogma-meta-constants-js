@@ -6,6 +6,7 @@ export namespace Event {
 
   export enum Type {
     start = "START", // action
+    ready = "READY", // action
 
     online = "ONLINE", // action
     offline = "OFFLINE", // action
@@ -76,6 +77,7 @@ export namespace Event {
     export type Storage = Type.encryptionKey;
     export type Action =
       | Type.start
+      | Type.ready
       | Type.online
       | Type.offline
       | Type.friendshipRequest;
